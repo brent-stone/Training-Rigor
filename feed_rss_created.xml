@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>Training Rigor Introduction</title>
+    <description>This blog is intended to facilitate understand and discussion of how to evaluate and improving the rigor in vocational training.</description>
+    <link>https://github.com/brent-stone/Training-Rigor/</link>
+    <atom:link href="https://github.com/brent-stone/Training-Rigor/feed_rss_created.xml" rel="self" type="application/rss+xml" />
+
+    
+    
+    <docs>https://github.com/brent-stone/Training-Rigor/</docs>
+    <language>en</language>
+
+    
+    <pubDate>Wed, 03 Dec 2025 18:13:01 -0000</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2025 18:13:01 -0000</lastBuildDate>
+    <ttl>1440</ttl>
+
+    
+    <generator>MkDocs RSS plugin - v1.17.7</generator>
+
+    
+    
+    <image>
+      <url>https://github.com/brent-stone.png</url>
+      <title>Training Rigor Introduction</title>
+      <link>https://github.com/brent-stone/Training-Rigor/</link>
+    </image>
+    
+
+    
+    
+  </channel>
+</rss>

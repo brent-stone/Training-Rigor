@@ -1,0 +1,11 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Training Rigor Introduction",
+    "home_page_url": "https://github.com/brent-stone/Training-Rigor/",
+    "feed_url": "https://github.com/brent-stone/Training-Rigor/feed_json_created.json",
+    "description": "This blog is intended to facilitate understand and discussion of how to evaluate and improving the rigor in vocational training.",
+    "icon": "https://github.com/brent-stone.png",
+    "authors": [],
+    "language": "en",
+    "items": []
+}
