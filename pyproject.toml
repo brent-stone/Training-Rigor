@@ -1,6 +1,6 @@
 [project]
 name = "training-rigor"
-version = "0.1.0"
+version = "0.1.1"
 description = "An introduction to measuring and improving rigor when setting learning outcomes for training and education"
 authors = [
     {name = "Brent Stone"}
