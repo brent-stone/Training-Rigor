@@ -4,8 +4,8 @@
     
     <title>Training Rigor Introduction</title>
     <description>This blog is intended to facilitate understand and discussion of how to evaluate and improving the rigor in vocational training.</description>
-    <link>https://github.com/brent-stone/Training-Rigor/</link>
-    <atom:link href="https://github.com/brent-stone/Training-Rigor/feed_rss_created.xml" rel="self" type="application/rss+xml" />
+    <link>https://brent-stone.github.io/Training-Rigor/</link>
+    <atom:link href="https://brent-stone.github.io/Training-Rigor/feed_rss_created.xml" rel="self" type="application/rss+xml" />
 
     
     
@@ -13,8 +13,8 @@
     <language>en</language>
 
     
-    <pubDate>Wed, 03 Dec 2025 18:13:01 -0000</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2025 18:13:01 -0000</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2025 21:53:35 -0000</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2025 21:53:35 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -25,11 +25,40 @@
     <image>
       <url>https://github.com/brent-stone.png</url>
       <title>Training Rigor Introduction</title>
-      <link>https://github.com/brent-stone/Training-Rigor/</link>
+      <link>https://brent-stone.github.io/Training-Rigor/</link>
     </image>
     
 
     
+    
+    <item>
+      <title>Rigor intro</title>
+      
+      
+        
+      <author>Brent Stone</author>
+        
+      
+      
+      
+        
+      <category>Bloom's Taxonomy</category>
+        
+      <category>Training</category>
+        
+      
+      <description>&lt;p&gt;The concept of rigor in training and education can be surprisingly complex and difficult for an organization to get
+right. This introduction to the topic focuses on how a specific stated learning objective&#39;s rigor can be measured using
+estimates for total hours to complete the goal and its alignment to Bloom&#39;s Taxonomy of Learning. A more detailed
+explanation of the concepts discussed can be found in the whitepaper in the github project listed in the &#34;Related links&#34;
+section of this page.&lt;/p&gt;</description>
+      <link>https://brent-stone.github.io/Training-Rigor/2025/12/03/training-rigor/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <source url="https://brent-stone.github.io/Training-Rigor/feed_rss_created.xml">Training Rigor Introduction</source>
+      <comments>https://brent-stone.github.io/Training-Rigor/2025/12/03/training-rigor/#__comments</comments>
+      <guid isPermaLink="true">https://brent-stone.github.io/Training-Rigor/2025/12/03/training-rigor/</guid>
+      
+    </item>
     
   </channel>
 </rss>
