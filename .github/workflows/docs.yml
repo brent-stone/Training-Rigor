@@ -13,7 +13,9 @@ jobs:
     steps:
       # Verify current version of checkout here:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: '0'
 
       - name: Configure Git Credentials
         run: |
@@ -21,7 +23,7 @@ jobs:
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
       # Verify current version of setup-python here:
       # https://github.com/actions/setup-python
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           # Check the github actions runner-iamges releases for currently supported
           # versions of python supported

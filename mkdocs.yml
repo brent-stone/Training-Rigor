@@ -1,10 +1,14 @@
 site_name: Training Rigor Introduction
 site_description: This blog is intended to facilitate understand and discussion of how to evaluate and improving the rigor in vocational training.
-site_url: https://github.com/brent-stone/Training-Rigor/
+site_url: https://brent-stone.github.io/Training-Rigor/
 strict: true
 repo_name: brent-stone/Training-Rigor/
 repo_url: https://github.com/brent-stone/Training-Rigor/
 edit_uri: edit/main/docs/
+
+watch:
+  - docs
+  - includes
 
 extra_css:
   - stylesheets/extra.css
@@ -73,8 +77,10 @@ theme:
     - navigation.tabs
     - navigation.top
     - navigation.footer
+    - navigation.tracking
     - content.action.view
     - content.action.edit
+    - content.tooltips
   logo: "stone.png"
   favicon: "favicon-32x32.png"
   custom_dir: "overrides"
@@ -113,10 +119,15 @@ markdown_extensions:
 # https://squidfunk.github.io/mkdocs-material/reference/tooltips/#configuration
 - abbr
 - attr_list
-- pymdownx.snippets
+- pymdownx.snippets:
+    auto_append:
+      - includes/abbreviations.md
 - md_in_html
 - pymdownx.inlinehilite
 - pymdownx.mark
+- pymdownx.blocks.caption
+- def_list
+- meta
 
 plugins:
   - meta
@@ -148,4 +159,6 @@ plugins:
       pretty_print: true
   - blog:
       blog_dir: .
-  - glightbox
+  - glightbox:
+      auto_caption: true
+  - mkdocs-video
