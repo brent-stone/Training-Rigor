@@ -1,0 +1,43 @@
+name: documentation
+on:
+  push:
+    # Comment out these two lines if you'd like to test that the mkdocs-material GitHub
+    # action successfully runs and publishes to GitHub pages
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  docs-build:
+    runs-on: ubuntu-latest
+    steps:
+      # Verify current version of checkout here:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v4
+
+      - name: Configure Git Credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+      # Verify current version of setup-python here:
+      # https://github.com/actions/setup-python
+      - uses: actions/setup-python@v5
+        with:
+          # Check the github actions runner-iamges releases for currently supported
+          # versions of python supported
+          # https://github.com/actions/runner-images/releases
+          python-version: '3.14.0'
+          cache: 'pip'
+      # Run the uv_exports_to_req_txt.[sh|bat] script prior to a merge into main
+      # to ensure the dependencies are up to date in the CI pipeline
+      - run: pip install -r requirements-mkdocs.txt
+
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+      - uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - run: mkdocs gh-deploy --force

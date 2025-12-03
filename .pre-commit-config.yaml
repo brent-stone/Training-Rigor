@@ -1,0 +1,39 @@
+#default_language_version:
+#    python: python3.11
+fail_fast: true
+
+repos:
+    -   repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v6.0.0
+        hooks:
+        -   id: end-of-file-fixer
+            files: ^.idea/
+        -   id: trailing-whitespace
+            exclude: ^site/
+        -   id: check-executables-have-shebangs
+        -   id: check-json
+        -   id: check-toml
+        -   id: check-yaml
+            args: ['--unsafe']
+        -   id: detect-private-key
+        -   id: detect-aws-credentials
+            args: ['--allow-missing-credentials']
+        -   id: mixed-line-ending
+            args: ['--fix=auto']
+    - repo: https://github.com/codespell-project/codespell
+      rev: v2.4.1
+      hooks:
+      - id: codespell
+        args:
+            - -w
+        additional_dependencies:
+          - tomli
+        exclude: '^.idea|^.venv|^.site'
+        exclude_types: [javascript]
+    # This will optimize images which in turn improves load speed and search engine optimization (SEO)
+    - repo: https://github.com/shssoichiro/oxipng
+      rev: v9.1.5
+      hooks:
+      - id: oxipng
+        args: [ "-o", "max", "--strip", "safe", "--alpha", "--preserve", "--recursive"]
+exclude: '(site|.venv|.idea|.github|.pytest_cache)/.*'
